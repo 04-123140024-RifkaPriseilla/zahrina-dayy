@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Kamu 🤍</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<audio id="FM" loop>
+  <source src="FM/audio.mp3" type="audio/mpeg">
+</audio>
+
+<div class="password-screen" id="passwordScreen">
+  <div class="box">
+    <h2>🔒 Masukkan Password</h2>
+    <p>Hint: tanggal lahir kamu 😉</p>
+    <input type="password" id="passwordInput" placeholder="DDMMYYYY">
+    <button onclick="checkPassword()">Masuk</button>
+  </div>
+</div>
+
+<div class="container hidden" id="content">
+  <h1 class="fade">🎂 Happy Birthday 🤍 🎂</h1>
+
+  <section class="letter fade">
+    <p id="typedText"></p>
+  </section>
+
+  <div class="gallery">
+    <div class="item"><img class="fade" src="FM/foto1.jpeg" onclick="openModal(0)"></div>
+    <div class="item"><img class="fade" src="FM/foto2.jpeg" onclick="openModal(1)"></div>
+    <div class="item"><img class="fade" src="FM/foto3.jpeg" onclick="openModal(2)"></div>
+    <div class="item"><img class="fade" src="FM/foto4.jpeg" onclick="openModal(3)"></div>
+    <div class="item"><img class="fade" src="FM/foto5.jpeg" onclick="openModal(4)"></div>
+    <div class="item"><img class="fade" src="FM/foto6.jpeg" onclick="openModal(5)"></div>
+    <div class="item"><img class="fade" src="FM/foto7.jpeg" onclick="openModal(6)"></div>
+    <div class="item"><img class="fade" src="FM/foto8.jpeg" onclick="openModal(7)"></div>
+    <div class="item"><img class="fade" src="FM/foto9.jpeg" onclick="openModal(8)"></div>
+    <div class="item"><img class="fade" src="FM/foto10.jpeg" onclick="openModal(9)"></div>
+  </div>
+
+  <p class="footer fade">Semoga Zahrina suka, maaf yah kalau simpel banget 🤍</p>
+</div>
+
+<div id="photoModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <img id="modalImg" src="">
+    <div class="modal-caption">
+      <p id="modalText"></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
