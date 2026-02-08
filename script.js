@@ -59,7 +59,7 @@ function checkPassword() {
 // --- FUNGSI POPUP / MODAL ---
 function openModal(photoIndex) {
   modal.style.display = "flex";
-  modalImg.src = `FM/Foto${photoIndex + 1}.jpeg`;
+  modalImg.src = `FM/foto${photoIndex + 1}.jpeg`;
   modalText.innerText = photoCaptions[photoIndex] || "Kenangan indah 🤍";
 }
 
